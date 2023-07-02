@@ -1,0 +1,10 @@
+from scipy import stats
+
+def pht(s1,s2):
+    t, p = stats.ttest_ind(s1, s2)
+    return p
+
+sample1 = [5, 10, 15, 20, 25]
+sample2 = [10, 20, 30, 40, 50]
+p_value = perform_hypothesis_test(sample1, sample2)
+print("P-value:", p_value)
